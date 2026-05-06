@@ -4,7 +4,6 @@ Adds a **Visible Production Stations** tab to the **Object List** panel in the m
 
 ## Features
 
-- **Visible Production Stations Tab**: A dedicated tab in the Object List panel lists all production stations currently visible on the map that contain production or processing modules.
 - **Player and NPC stations**: Both player-owned and NPC stations are included. Player stations always show the full ware breakdown; NPC stations show ware details when the Logical Station Overview visibility rules allow it.
 - **Station icon with issue indicator**: The station class icon is shown next to the station name and tinted in warning colour when any production module has an issue.
 - **Production ware breakdown**: Expand a station row to see per-ware produced, consumed, and net total amounts per hour (player stations and NPC stations where ware data is accessible).
@@ -96,7 +95,6 @@ The **+/-** button in the column header row expands or collapses all station row
 ## Credits
 
 - **Author**: Chem O`Dun, on [Nexus Mods](https://next.nexusmods.com/profile/ChemODun/mods?gameId=2659) and [Steam Workshop](https://steamcommunity.com/id/chemodun/myworkshopfiles/?appid=392160)
-- Based on the production data logic from the [Production Stations Tab](https://www.nexusmods.com/x4foundations/mods/2052) mod by the same author.
 - *"X4: Foundations"* is a trademark of [Egosoft](https://www.egosoft.com).
 
 ## Acknowledgements
