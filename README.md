@@ -35,8 +35,8 @@ As a result, in most cases the data covers only a **limited number** of stations
 
 ## Installation
 
-- **Steam Workshop**: [Visible Production Stations](https://steamcommunity.com/sharedfiles/filedetails/?id=0) - only for **Game version 8.00** with latest Steam version of the `UI Extensions and HUD` mod (version 80.43 from April 8).
-- **Nexus Mods**: [Visible Production Stations](https://www.nexusmods.com/x4foundations/mods/0)
+- **Steam Workshop**: [Visible Production Stations](https://steamcommunity.com/sharedfiles/filedetails/?id=3721057940) - only for **Game version 8.00** with latest Steam version of the `UI Extensions and HUD` mod (version 80.43 from April 8).
+- **Nexus Mods**: [Visible Production Stations](https://www.nexusmods.com/x4foundations/mods/2101)
 
 ## Usage
 
