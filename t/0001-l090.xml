@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Turkish -->
+<diff>
+  <add sel="/language">
+    <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+      <!-- mod identity -->
+      <t id="1">Görünür Üretim İstasyonları</t>
+      <t id="2">Haritada şu anda görünen üretim istasyonlarını çalışan/toplam modül sayısıyla gösterir. Üretim verilerine erişilebilen oyuncu ve NPC istasyonları dahildir. Genişletildiğinde tam mal dökümü; mal verilerinin görünmediği NPC istasyonları için sınırlı bilgi özeti.</t>
+
+      <!-- column headers (main table) -->
+      <t id="110">İstasyon</t>
+      <t id="111">Modüller/Simgeler</t>
+
+      <!-- column headers (expanded ware breakdown) -->
+      <t id="112">Üretilen</t>
+      <t id="113">Tüketilen</t>
+      <t id="114">Toplam</t>
+
+      <!-- group headers (expanded ware breakdown) -->
+      <t id="120">Ürünler</t>
+      <t id="121">Ara Ürünler</t>
+      <t id="122">Kaynaklar</t>
+
+      <!-- status / placeholder messages -->
+      <t id="1000">Haritada görünür üretim istasyonu yok</t>
+      <t id="1001">Üretim verisi mevcut değil</t>
+      <t id="1002">Sınırlı bilgi - Aktif modüller:</t>
+
+      <!-- settings: general section -->
+      <t id="10000">Genel</t>
+      <t id="10010">Yalnızca sorunlu istasyonları göster</t>
+
+      <!-- settings: performance section -->
+      <t id="20000">Performans</t>
+      <t id="20010">Veri Yenileme Aralığı</t>
+      <t id="20019"> kene</t>
+
+      <!-- settings: debug section -->
+      <t id="90000">Hata Ayıklama</t>
+      <t id="90010">Hata ayıklama seviyesi</t>
+      <t id="90012">Hata Ayıklama</t>
+      <t id="90013">İzleme</t>
+    </page>
+  </add>
+</diff>

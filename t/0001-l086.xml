@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chinese Simplified -->
+<diff>
+  <add sel="/language">
+    <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+      <!-- mod identity -->
+      <t id="1">可见生产站</t>
+      <t id="2">显示当前地图上可见的生产站及其活跃/总模块数。包括玩家及NPC中可访问生产数据的站。展开后显示完整物资明细；对物资数据不可见的NPC站显示有限信息摘要。</t>
+
+      <!-- column headers (main table) -->
+      <t id="110">站点</t>
+      <t id="111">模块/图标</t>
+
+      <!-- column headers (expanded ware breakdown) -->
+      <t id="112">产量</t>
+      <t id="113">消耗量</t>
+      <t id="114">总计</t>
+
+      <!-- group headers (expanded ware breakdown) -->
+      <t id="120">产品</t>
+      <t id="121">中间品</t>
+      <t id="122">资源</t>
+
+      <!-- status / placeholder messages -->
+      <t id="1000">地图上没有可见的生产站</t>
+      <t id="1001">无可用生产数据</t>
+      <t id="1002">信息有限 - 活跃模块:</t>
+
+      <!-- settings: general section -->
+      <t id="10000">常规</t>
+      <t id="10010">仅显示有问题的站点</t>
+
+      <!-- settings: performance section -->
+      <t id="20000">性能</t>
+      <t id="20010">数据刷新间隔</t>
+      <t id="20019"> 帧</t>
+
+      <!-- settings: debug section -->
+      <t id="90000">调试</t>
+      <t id="90010">调试级别</t>
+      <t id="90012">调试</t>
+      <t id="90013">跟踪</t>
+    </page>
+  </add>
+</diff>

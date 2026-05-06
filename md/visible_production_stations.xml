@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="Visible_Production_Stations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+    <cues>
+
+        <cue name="Init" version="1">
+            <actions>
+                <include_actions ref="DefaultConfig" />
+                <raise_lua_event name="'VisibleProductionStations.ConfigChanged'" param="table[
+          $showIssuesOnly      = $config.$showIssuesOnly,
+          $debugMode           = $config.$debugMode,
+          $dataRefreshInterval = $config.$dataRefreshInterval,
+        ]" />
+                <remove_value name="$config" />
+            </actions>
+        </cue>
+
+        <!-- Reads (or initialises) mod config from player.entity.$visibleProductionStationsConfig.
+         Leaves a local $config reference; caller must <remove_value name="$config" />. -->
+        <library name="DefaultConfig" purpose="include_actions" version="1">
+            <actions>
+                <do_if value="@player.entity.$visibleProductionStationsConfig == null">
+                    <set_value name="player.entity.$visibleProductionStationsConfig" exact="table[
+            $showIssuesOnly      = false,
+            $debugMode           = 'none',
+            $dataRefreshInterval = 3,
+          ]" />
+                </do_if>
+                <set_value name="$config" exact="player.entity.$visibleProductionStationsConfig" />
+                <!-- forward-compat: fill keys added in later versions -->
+                <do_if value="$config.$showIssuesOnly? == false">
+                    <set_value name="$config.$showIssuesOnly" exact="false" />
+                </do_if>
+                <do_if value="$config.$debugMode? == false">
+                    <set_value name="$config.$debugMode" exact="'none'" />
+                </do_if>
+                <do_if value="$config.$dataRefreshInterval? == false">
+                    <set_value name="$config.$dataRefreshInterval" exact="3" />
+                </do_if>
+            </actions>
+        </library>
+
+        <!-- *** Options menu *** -->
+
+        <cue name="Register_Menu" instantiate="true" version="1">
+            <conditions>
+                <event_cue_signalled cue="md.Simple_Menu_API.Reloaded" />
+            </conditions>
+            <actions>
+                <signal_cue_instantly cue="md.Simple_Menu_API.Register_Options_Menu"
+                    param="table[
+            $id     = 'visible_production_stations_options',
+            $columns = 12,
+            $title  = {1972092424, 1},
+            $onOpen = Visible_Production_Stations_Options_Menu,
+          ]" />
+            </actions>
+        </cue>
+
+        <cue name="Visible_Production_Stations_Options_Menu" instantiate="true" version="1">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <include_actions ref="DefaultConfig" />
+
+                <!-- Section: General -->
+                <run_actions ref="md.Options_Helper.Add_Title_Row">
+                    <param name="title" value="{1972092424, 10000}" />
+                    <param name="columns" value="12" />
+                </run_actions>
+                <run_actions ref="md.Options_Helper.Add_Checkbox">
+                    <param name="id" value="'showIssuesOnly'" />
+                    <param name="col" value="1" />
+                    <param name="textColSpan" value="11" />
+                    <param name="text" value="{1972092424, 10010}" />
+                    <param name="data" value="$config" />
+                    <param name="handle" value="Handle_Checkbox_Changed" />
+                </run_actions>
+
+                <!-- Section: Performance -->
+                <run_actions ref="md.Options_Helper.Add_Title_Row">
+                    <param name="title" value="{1972092424, 20000}" />
+                    <param name="columns" value="12" />
+                </run_actions>
+                <run_actions ref="md.Options_Helper.Add_Slider">
+                    <param name="id" value="'dataRefreshInterval'" />
+                    <param name="text" value="{1972092424, 20010}" />
+                    <param name="min" value="1" />
+                    <param name="max" value="10" />
+                    <param name="step" value="1" />
+                    <param name="suffix" value="{1972092424, 20019}" />
+                    <param name="colSpan" value="12" />
+                    <param name="data" value="$config" />
+                    <param name="handle" value="Handle_Slider_Changed" />
+                </run_actions>
+
+                <!-- Section: Debug -->
+                <run_actions ref="md.Options_Helper.Add_Title_Row">
+                    <param name="title" value="{1972092424, 90000}" />
+                    <param name="columns" value="12" />
+                </run_actions>
+                <set_value name="$debugOptions" exact="[
+          table[$text = {1001, 34},          $value = 'none'],
+          table[$text = {1972092424, 90012}, $value = 'debug'],
+          table[$text = {1972092424, 90013}, $value = 'trace'],
+        ]" />
+                <set_value name="$currentIndex" exact="1" />
+                <do_if value="$config.$debugMode == 'debug'">
+                    <set_value name="$currentIndex" exact="2" />
+                </do_if>
+                <do_elseif value="$config.$debugMode == 'trace'">
+                    <set_value name="$currentIndex" exact="3" />
+                </do_elseif>
+                <run_actions ref="md.Options_Helper.Add_Dropdown">
+                    <param name="id" value="'debugMode'" />
+                    <param name="options" value="$debugOptions" />
+                    <param name="currentIndex" value="$currentIndex" />
+                    <param name="col" value="1" />
+                    <param name="textColSpan" value="7" />
+                    <param name="text" value="{1972092424, 90010}" />
+                    <param name="dropdownColSpan" value="5" />
+                    <param name="handle" value="Handle_Dropdown_Changed" />
+                </run_actions>
+                <remove_value name="$debugOptions" />
+                <remove_value name="$currentIndex" />
+                <remove_value name="$config" />
+            </actions>
+        </cue>
+
+        <cue name="Handle_Checkbox_Changed" instantiate="true" version="1">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <include_actions ref="DefaultConfig" />
+                <set_value name="$resultTable" exact="$config" />
+                <include_actions ref="md.Options_Helper.Process_Checkbox_Changed" />
+                <remove_value name="$resultTable" />
+                <raise_lua_event name="'VisibleProductionStations.ConfigChanged'" param="table[
+          $showIssuesOnly      = $config.$showIssuesOnly,
+          $debugMode           = $config.$debugMode,
+          $dataRefreshInterval = $config.$dataRefreshInterval,
+        ]" />
+                <remove_value name="$config" />
+            </actions>
+        </cue>
+
+        <cue name="Handle_Slider_Changed" instantiate="true" version="1">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <include_actions ref="DefaultConfig" />
+                <set_value name="$resultTable" exact="$config" />
+                <include_actions ref="md.Options_Helper.Process_Slider_Changed" />
+                <remove_value name="$resultTable" />
+                <raise_lua_event name="'VisibleProductionStations.ConfigChanged'" param="table[
+          $showIssuesOnly      = $config.$showIssuesOnly,
+          $debugMode           = $config.$debugMode,
+          $dataRefreshInterval = $config.$dataRefreshInterval,
+        ]" />
+                <remove_value name="$config" />
+            </actions>
+        </cue>
+
+        <cue name="Handle_Dropdown_Changed" instantiate="true" version="1">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <include_actions ref="DefaultConfig" />
+                <set_value name="$resultTable" exact="$config" />
+                <include_actions ref="md.Options_Helper.Process_Dropdown_Changed" />
+                <remove_value name="$resultTable" />
+                <raise_lua_event name="'VisibleProductionStations.ConfigChanged'" param="table[
+          $showIssuesOnly      = $config.$showIssuesOnly,
+          $debugMode           = $config.$debugMode,
+          $dataRefreshInterval = $config.$dataRefreshInterval,
+        ]" />
+                <remove_value name="$config" />
+            </actions>
+        </cue>
+
+    </cues>
+</mdscript>

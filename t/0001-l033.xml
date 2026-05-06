@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- French -->
+<diff>
+  <add sel="/language">
+    <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+      <!-- mod identity -->
+      <t id="1">Stations de production visibles</t>
+      <t id="2">Affiche les stations de production actuellement visibles sur la carte avec le nombre de modules actifs/total. Les stations du joueur et des PNJ avec des données de production accessibles sont incluses. Détail complet des marchandises lors du développement ; résumé d'informations limitées pour les stations PNJ dont les données de marchandises ne sont pas visibles.</t>
+
+      <!-- column headers (main table) -->
+      <t id="110">Station</t>
+      <t id="111">Modules/Icônes</t>
+
+      <!-- column headers (expanded ware breakdown) -->
+      <t id="112">Produit</t>
+      <t id="113">Consommé</t>
+      <t id="114">Total</t>
+
+      <!-- group headers (expanded ware breakdown) -->
+      <t id="120">Produits</t>
+      <t id="121">Intermédiaires</t>
+      <t id="122">Ressources</t>
+
+      <!-- status / placeholder messages -->
+      <t id="1000">Aucune station de production visible sur la carte</t>
+      <t id="1001">Aucune donnée de production disponible</t>
+      <t id="1002">Informations limitées - Modules actifs :</t>
+
+      <!-- settings: general section -->
+      <t id="10000">Général</t>
+      <t id="10010">Afficher uniquement les stations avec des problèmes</t>
+
+      <!-- settings: performance section -->
+      <t id="20000">Performance</t>
+      <t id="20010">Intervalle de rafraîchissement des données</t>
+      <t id="20019"> tics</t>
+
+      <!-- settings: debug section -->
+      <t id="90000">Débogage</t>
+      <t id="90010">Niveau de débogage</t>
+      <t id="90012">Débogage</t>
+      <t id="90013">Traçage</t>
+    </page>
+  </add>
+</diff>

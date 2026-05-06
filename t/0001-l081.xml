@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Japanese -->
+<diff>
+  <add sel="/language">
+    <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+      <!-- mod identity -->
+      <t id="1">表示中の生産ステーション</t>
+      <t id="2">マップ上に現在表示されている生産ステーションを、稼働中/合計モジュール数とともに表示します。プレイヤーおよびNPCの生産データにアクセス可能なステーションが含まれます。展開時に詳細な物資内訳を表示し、物資データが見えないNPCステーションには限定情報の概要を表示します。</t>
+
+      <!-- column headers (main table) -->
+      <t id="110">ステーション</t>
+      <t id="111">モジュール/アイコン</t>
+
+      <!-- column headers (expanded ware breakdown) -->
+      <t id="112">生産量</t>
+      <t id="113">消費量</t>
+      <t id="114">合計</t>
+
+      <!-- group headers (expanded ware breakdown) -->
+      <t id="120">製品</t>
+      <t id="121">中間製品</t>
+      <t id="122">資源</t>
+
+      <!-- status / placeholder messages -->
+      <t id="1000">マップ上に生産ステーションが見当たりません</t>
+      <t id="1001">生産データを取得できません</t>
+      <t id="1002">限定情報 - 稼働モジュール:</t>
+
+      <!-- settings: general section -->
+      <t id="10000">一般</t>
+      <t id="10010">問題のあるステーションのみ表示</t>
+
+      <!-- settings: performance section -->
+      <t id="20000">パフォーマンス</t>
+      <t id="20010">データ更新間隔</t>
+      <t id="20019"> ティック</t>
+
+      <!-- settings: debug section -->
+      <t id="90000">デバッグ</t>
+      <t id="90010">デバッグレベル</t>
+      <t id="90012">デバッグ</t>
+      <t id="90013">トレース</t>
+    </page>
+  </add>
+</diff>

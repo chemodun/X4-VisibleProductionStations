@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Spanish -->
+<diff>
+  <add sel="/language">
+    <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+      <!-- mod identity -->
+      <t id="1">Estaciones de producción visibles</t>
+      <t id="2">Muestra las estaciones de producción actualmente visibles en el mapa con el número de módulos activos/total. Se incluyen las estaciones del jugador y de PNJ con datos de producción accesibles. Desglose completo de mercancías al expandir; resumen de información limitada para estaciones de PNJ donde los datos de mercancías no son visibles.</t>
+
+      <!-- column headers (main table) -->
+      <t id="110">Estación</t>
+      <t id="111">Módulos/Iconos</t>
+
+      <!-- column headers (expanded ware breakdown) -->
+      <t id="112">Producido</t>
+      <t id="113">Consumido</t>
+      <t id="114">Total</t>
+
+      <!-- group headers (expanded ware breakdown) -->
+      <t id="120">Productos</t>
+      <t id="121">Intermediarios</t>
+      <t id="122">Recursos</t>
+
+      <!-- status / placeholder messages -->
+      <t id="1000">No hay estaciones de producción visibles en el mapa</t>
+      <t id="1001">No hay datos de producción disponibles</t>
+      <t id="1002">Información limitada - Módulos activos:</t>
+
+      <!-- settings: general section -->
+      <t id="10000">General</t>
+      <t id="10010">Mostrar solo estaciones con problemas</t>
+
+      <!-- settings: performance section -->
+      <t id="20000">Rendimiento</t>
+      <t id="20010">Intervalo de actualización de datos</t>
+      <t id="20019"> tics</t>
+
+      <!-- settings: debug section -->
+      <t id="90000">Depuración</t>
+      <t id="90010">Nivel de depuración</t>
+      <t id="90012">Depuración</t>
+      <t id="90013">Rastreo</t>
+    </page>
+  </add>
+</diff>

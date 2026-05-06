@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Italian -->
+<diff>
+  <add sel="/language">
+    <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+      <!-- mod identity -->
+      <t id="1">Stazioni di produzione visibili</t>
+      <t id="2">Mostra le stazioni di produzione attualmente visibili sulla mappa con il conteggio dei moduli attivi/totali. Sono incluse le stazioni del giocatore e degli NPC con dati di produzione accessibili. Dettaglio completo delle merci all'espansione; riepilogo di informazioni limitate per le stazioni NPC dove i dati delle merci non sono visibili.</t>
+
+      <!-- column headers (main table) -->
+      <t id="110">Stazione</t>
+      <t id="111">Moduli/Icone</t>
+
+      <!-- column headers (expanded ware breakdown) -->
+      <t id="112">Prodotto</t>
+      <t id="113">Consumato</t>
+      <t id="114">Totale</t>
+
+      <!-- group headers (expanded ware breakdown) -->
+      <t id="120">Prodotti</t>
+      <t id="121">Intermedi</t>
+      <t id="122">Risorse</t>
+
+      <!-- status / placeholder messages -->
+      <t id="1000">Nessuna stazione di produzione visibile sulla mappa</t>
+      <t id="1001">Nessun dato di produzione disponibile</t>
+      <t id="1002">Informazioni limitate - Moduli attivi:</t>
+
+      <!-- settings: general section -->
+      <t id="10000">Generale</t>
+      <t id="10010">Mostra solo le stazioni con problemi</t>
+
+      <!-- settings: performance section -->
+      <t id="20000">Prestazioni</t>
+      <t id="20010">Intervallo di aggiornamento dati</t>
+      <t id="20019"> tick</t>
+
+      <!-- settings: debug section -->
+      <t id="90000">Debug</t>
+      <t id="90010">Livello di debug</t>
+      <t id="90012">Debug</t>
+      <t id="90013">Traccia</t>
+    </page>
+  </add>
+</diff>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Czech -->
+<diff>
+  <add sel="/language">
+    <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+      <!-- mod identity -->
+      <t id="1">Viditelné výrobní stanice</t>
+      <t id="2">Zobrazuje výrobní stanice aktuálně viditelné na mapě s počtem aktivních/celkových modulů. Jsou zahrnuty stanice hráče a NPC s přístupnými výrobními daty. Úplný přehled zboží po rozbalení; omezené informace pro NPC stanice, kde data zboží nejsou viditelná.</t>
+
+      <!-- column headers (main table) -->
+      <t id="110">Stanice</t>
+      <t id="111">Moduly/Ikony</t>
+
+      <!-- column headers (expanded ware breakdown) -->
+      <t id="112">Vyrobeno</t>
+      <t id="113">Spotřebováno</t>
+      <t id="114">Celkem</t>
+
+      <!-- group headers (expanded ware breakdown) -->
+      <t id="120">Produkty</t>
+      <t id="121">Meziprodukty</t>
+      <t id="122">Suroviny</t>
+
+      <!-- status / placeholder messages -->
+      <t id="1000">Na mapě nejsou viditelné žádné výrobní stanice</t>
+      <t id="1001">Nejsou k dispozici žádná výrobní data</t>
+      <t id="1002">Omezené informace - Aktivní moduly:</t>
+
+      <!-- settings: general section -->
+      <t id="10000">Obecné</t>
+      <t id="10010">Zobrazit pouze stanice s problémy</t>
+
+      <!-- settings: performance section -->
+      <t id="20000">Výkon</t>
+      <t id="20010">Interval obnovy dat</t>
+      <t id="20019"> tiků</t>
+
+      <!-- settings: debug section -->
+      <t id="90000">Ladění</t>
+      <t id="90010">Úroveň ladění</t>
+      <t id="90012">Ladění</t>
+      <t id="90013">Trasování</t>
+    </page>
+  </add>
+</diff>

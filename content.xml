@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content
+  id=""
+  name="Visible Production Stations"
+  author="Chem O`Dun"
+  version="80001"
+  date="2026-05-05"
+  save="false"
+  sync="false"
+  enabled="true"
+  description="Adds a Visible Production Stations tab to the Object List panel in the map. Shows all production stations currently visible on the map with working/total module counts and issue highlighting. Player stations show a full ware breakdown (products, intermediates, resources) on expand. NPC stations show ware details when the Logical Station Overview visibility rules allow it, and otherwise show a module-count and issue summary.">
+  <text language="7"
+    description="Adds a Visible Production Stations tab to the Object List panel in the map. Shows all production stations currently visible on the map with working/total module counts and issue highlighting. Player stations show a full ware breakdown (products, intermediates, resources) on expand. NPC stations show ware details when the Logical Station Overview visibility rules allow it, and otherwise show a module-count and issue summary."></text>
+  <!-- French -->
+  <text language="33"
+    description="Ajoute un onglet Stations de production visibles au panneau Liste des objets dans la carte. Affiche toutes les stations de production visibles sur la carte avec le nombre de modules actifs/total et la mise en évidence des problèmes. Les stations du joueur affichent une ventilation complète des marchandises (produits, intermédiaires, ressources) à l'expansion. Les stations NPC affichent les détails des marchandises lorsque les règles de visibilité de la Vue d'ensemble de la station logique le permettent, sinon un résumé du nombre de modules et des problèmes est affiché."></text>
+  <!-- Spanish -->
+  <text language="34"
+    description="Añade una pestaña de Estaciones de Producción Visibles al panel de Lista de Objetos en el mapa. Muestra todas las estaciones de producción actualmente visibles en el mapa con el recuento de módulos activos/total y el resaltado de problemas. Las estaciones del jugador muestran un desglose completo de mercancías (productos, intermediarios, recursos) al expandir. Las estaciones NPC muestran detalles de mercancías cuando las reglas de visibilidad de la Vista General de Estación Lógica lo permiten, en caso contrario muestran un resumen del recuento de módulos y problemas."></text>
+  <!-- Italian -->
+  <text language="39"
+    description="Aggiunge una scheda Stazioni di Produzione Visibili al pannello Elenco Oggetti nella mappa. Mostra tutte le stazioni di produzione attualmente visibili nella mappa con il conteggio dei moduli attivi/totali e l'evidenziazione dei problemi. Le stazioni del giocatore mostrano una ripartizione completa delle merci (prodotti, intermedi, risorse) all'espansione. Le stazioni NPC mostrano i dettagli delle merci quando le regole di visibilità della Panoramica Stazione Logica lo consentono, altrimenti mostrano un riepilogo del conteggio dei moduli e dei problemi."></text>
+  <!-- Czech -->
+  <text language="42"
+    description="Přidá záložku Viditelné výrobní stanice do panelu Seznam objektů na mapě. Zobrazuje všechny výrobní stanice aktuálně viditelné na mapě s počtem aktivních/celkových modulů a zvýrazněním problémů. Stanice hráče zobrazují při rozbalení úplný přehled zboží (produkty, meziprodukty, suroviny). Stanice NPC zobrazují podrobnosti o zboží, pokud to pravidla viditelnosti Přehledu logistické stanice umožňují, jinak zobrazují souhrn počtu modulů a problémů."></text>
+  <!-- English -->
+  <text language="44"
+    description="Adds a Visible Production Stations tab to the Object List panel in the map. Shows all production stations currently visible on the map with working/total module counts and issue highlighting. Player stations show a full ware breakdown (products, intermediates, resources) on expand. NPC stations show ware details when the Logical Station Overview visibility rules allow it, and otherwise show a module-count and issue summary."></text>
+  <!-- Polish -->
+  <text language="48"
+    description="Dodaje zakładkę Widoczne Stacje Produkcyjne do panelu Listy Obiektów na mapie. Wyświetla wszystkie stacje produkcyjne aktualnie widoczne na mapie z liczbą działających/łącznych modułów i podświetlaniem problemów. Stacje gracza pokazują pełne zestawienie towarów (produkty, półprodukty, zasoby) po rozwinięciu. Stacje NPC pokazują szczegóły towarów, gdy pozwalają na to zasady widoczności Przeglądu Stacji Logistycznej, w przeciwnym razie pokazują podsumowanie liczby modułów i problemów."></text>
+  <!-- German -->
+  <text language="49"
+    description="Fügt eine Registerkarte Sichtbare Produktionsstationen zum Objektlisten-Panel auf der Karte hinzu. Zeigt alle derzeit auf der Karte sichtbaren Produktionsstationen mit aktiven/gesamten Modulanzahlen und Problemhervorhebung. Spielerstationen zeigen beim Ausklappen eine vollständige Warenaufschlüsselung (Produkte, Zwischenprodukte, Ressourcen). NPC-Stationen zeigen Warendetails, wenn die Sichtbarkeitsregeln der Logistischen Stationsübersicht dies zulassen, andernfalls wird eine Zusammenfassung der Modulanzahl und Probleme angezeigt."></text>
+  <!-- Portuguese -->
+  <text language="55"
+    description="Adiciona uma aba de Estações de Produção Visíveis ao painel de Lista de Objetos no mapa. Mostra todas as estações de produção atualmente visíveis no mapa com contagens de módulos ativos/totais e destaque de problemas. As estações do jogador mostram uma divisão completa de mercadorias (produtos, intermediários, recursos) ao expandir. As estações NPC mostram detalhes das mercadorias quando as regras de visibilidade da Visão Geral da Estação Lógica permitem, caso contrário mostram um resumo da contagem de módulos e problemas."></text>
+  <!-- Japanese -->
+  <text language="81"
+    description="マップのオブジェクトリストパネルに「表示中の生産ステーション」タブを追加します。マップ上に現在表示されているすべての生産ステーションを、稼働中/合計モジュール数と問題のハイライト付きで表示します。プレイヤーステーションは展開時に完全な物資内訳（製品、中間品、資源）を表示します。NPCステーションは、論理ステーション概要の可視性ルールで許可されている場合に物資の詳細を表示し、それ以外の場合はモジュール数と問題のサマリーを表示します。"></text>
+  <!-- Korean -->
+  <text language="82"
+    description="맵의 오브젝트 목록 패널에 '보이는 생산 기지' 탭을 추가합니다. 현재 맵에서 보이는 모든 생산 기지를 작동/전체 모듈 수와 문제 강조 표시와 함께 보여줍니다. 플레이어 기지는 확장 시 완전한 물자 분류(제품, 중간 생산품, 자원)를 표시합니다. NPC 기지는 논리 기지 개요 가시성 규칙이 허용할 때 물자 세부 정보를 표시하고, 그렇지 않으면 모듈 수와 문제 요약을 표시합니다."></text>
+  <!-- Chinese Simplified -->
+  <text language="86"
+    description="在地图的对象列表面板中添加一个「可见生产站」选项卡。显示地图上当前可见的所有生产站，包括工作/总模块数和问题高亮显示。玩家站在展开时显示完整的货物分类（产品、中间品、资源）。NPC站在逻辑站概览可见性规则允许时显示货物详情，否则显示模块数量和问题摘要。"></text>
+  <!-- Chinese Traditional -->
+  <text language="88"
+    description="在地圖的物件清單面板中新增一個「可見生產站」標籤。顯示地圖上目前可見的所有生產站，包含工作/總模組數量和問題高亮顯示。玩家站展開時顯示完整的貨物分類（產品、中間品、資源）。NPC站在邏輯站概覽可見性規則允許時顯示貨物詳情，否則顯示模組數量和問題摘要。"></text>
+  <!-- Turkish -->
+  <text language="90"
+    description="Haritadaki Nesne Listesi paneline Görünür Üretim İstasyonları sekmesi ekler. Haritada şu anda görünür olan tüm üretim istasyonlarını çalışan/toplam modül sayıları ve sorun vurgulamasıyla gösterir. Oyuncu istasyonları genişletildiğinde tam mal dökümü (ürünler, ara ürünler, kaynaklar) gösterir. NPC istasyonları, Mantıksal İstasyon Genel Görünümü görünürlük kuralları izin verdiğinde mal ayrıntılarını gösterir, aksi takdirde modül sayısı ve sorun özeti gösterir."></text>
+  <!-- Ukrainian -->
+  <text language="380"
+    description="Додає вкладку «Видимі виробничі станції» до панелі списку об'єктів на карті. Відображає всі виробничі станції, видимі на карті, з кількістю активних/загальних модулів і підсвічуванням проблем. Станції гравця при розгортанні показують повний перелік товарів (продукти, напівпродукти, ресурси). Станції NPC показують деталі товарів, якщо це дозволяють правила видимості Огляду логістичної станції, інакше відображається зведення кількості модулів і проблем."></text>
+  <dependency version="800"></dependency>
+  <dependency id="kuerteeUIExtensionsAndHUD" optional="false" name="kuertee UI Extensions and HUD" version="804"></dependency>
+  <dependency id="ws_2042901274" optional="false" name="SirNukes Mod Support APIs" version="195"></dependency>
+  <dependency id="ws_3715253556" optional="false" name="Options Helper" version="100"></dependency>
+</content>

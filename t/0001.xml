@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+    <add sel="/language">
+        <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+            <!-- mod identity -->
+            <t id="1">Visible Production Stations</t>
+            <t id="2">Shows production stations currently visible on a map with working/total module counts. Player and NPC stations with accessible production data are included. Full ware breakdown on expand; limited-info summary for NPC stations where ware data is not visible.</t>
+
+            <!-- column headers (main table) -->
+            <t id="110">Station</t>
+            <t id="111">Modules/Icons</t>
+
+            <!-- column headers (expanded ware breakdown) -->
+            <t id="112">Produced</t>
+            <t id="113">Consumed</t>
+            <t id="114">Total</t>
+
+            <!-- group headers (expanded ware breakdown) -->
+            <t id="120">Products</t>
+            <t id="121">Intermediates</t>
+            <t id="122">Resources</t>
+
+            <!-- status / placeholder messages -->
+            <t id="1000">No production stations visible on the map</t>
+            <t id="1001">No production data available</t>
+            <t id="1002">Limited information - Active modules:</t>
+
+            <!-- settings: general section -->
+            <t id="10000">General</t>
+            <t id="10010">Show only stations with issues</t>
+
+            <!-- settings: performance section -->
+            <t id="20000">Performance</t>
+            <t id="20010">Data Refresh Interval</t>
+            <t id="20019"> ticks</t>
+
+            <!-- settings: debug section -->
+            <t id="90000">Debug</t>
+            <t id="90010">Debug level</t>
+            <t id="90012">Debug</t>
+            <t id="90013">Trace</t>
+
+        </page>
+    </add>
+</diff>

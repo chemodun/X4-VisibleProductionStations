@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Korean -->
+<diff>
+  <add sel="/language">
+    <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+      <!-- mod identity -->
+      <t id="1">표시 중인 생산 기지</t>
+      <t id="2">현재 맵에 표시된 생산 기지를 활성/전체 모듈 수와 함께 보여줍니다. 생산 데이터에 접근 가능한 플레이어 및 NPC 기지가 포함됩니다. 확장 시 전체 물자 분석 표시; 물자 데이터가 보이지 않는 NPC 기지에는 제한된 정보 요약을 표시합니다.</t>
+
+      <!-- column headers (main table) -->
+      <t id="110">기지</t>
+      <t id="111">모듈/아이콘</t>
+
+      <!-- column headers (expanded ware breakdown) -->
+      <t id="112">생산</t>
+      <t id="113">소비</t>
+      <t id="114">합계</t>
+
+      <!-- group headers (expanded ware breakdown) -->
+      <t id="120">제품</t>
+      <t id="121">중간재</t>
+      <t id="122">자원</t>
+
+      <!-- status / placeholder messages -->
+      <t id="1000">맵에 표시된 생산 기지가 없습니다</t>
+      <t id="1001">생산 데이터를 사용할 수 없습니다</t>
+      <t id="1002">제한된 정보 - 활성 모듈:</t>
+
+      <!-- settings: general section -->
+      <t id="10000">일반</t>
+      <t id="10010">문제 있는 기지만 표시</t>
+
+      <!-- settings: performance section -->
+      <t id="20000">성능</t>
+      <t id="20010">데이터 새로 고침 간격</t>
+      <t id="20019"> 틱</t>
+
+      <!-- settings: debug section -->
+      <t id="90000">디버그</t>
+      <t id="90010">디버그 수준</t>
+      <t id="90012">디버그</t>
+      <t id="90013">추적</t>
+    </page>
+  </add>
+</diff>

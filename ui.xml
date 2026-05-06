@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon name="visible_production_stations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../ui/core/addon.xsd">
+    <environment type="menus">
+        <dependency name="sn_mod_support_apis" />
+        <dependency name="ego_detailmonitor" />
+        <dependency name="kuertee_ui_extensions" />
+        <file name="ui/visible_production_stations.lua" />
+    </environment>
+</addon>

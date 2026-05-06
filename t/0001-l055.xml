@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Portuguese -->
+<diff>
+  <add sel="/language">
+    <page id="1972092424" title="Visible Production Stations" descr="" voice="no">
+      <!-- mod identity -->
+      <t id="1">Estações de produção visíveis</t>
+      <t id="2">Mostra as estações de produção atualmente visíveis no mapa com a contagem de módulos ativos/totais. Estações do jogador e de NPCs com dados de produção acessíveis são incluídas. Detalhamento completo de mercadorias ao expandir; resumo de informações limitadas para estações de NPC onde os dados de mercadorias não são visíveis.</t>
+
+      <!-- column headers (main table) -->
+      <t id="110">Estação</t>
+      <t id="111">Módulos/Ícones</t>
+
+      <!-- column headers (expanded ware breakdown) -->
+      <t id="112">Produzido</t>
+      <t id="113">Consumido</t>
+      <t id="114">Total</t>
+
+      <!-- group headers (expanded ware breakdown) -->
+      <t id="120">Produtos</t>
+      <t id="121">Intermediários</t>
+      <t id="122">Recursos</t>
+
+      <!-- status / placeholder messages -->
+      <t id="1000">Nenhuma estação de produção visível no mapa</t>
+      <t id="1001">Nenhum dado de produção disponível</t>
+      <t id="1002">Informações limitadas - Módulos ativos:</t>
+
+      <!-- settings: general section -->
+      <t id="10000">Geral</t>
+      <t id="10010">Mostrar apenas estações com problemas</t>
+
+      <!-- settings: performance section -->
+      <t id="20000">Desempenho</t>
+      <t id="20010">Intervalo de atualização de dados</t>
+      <t id="20019"> tiques</t>
+
+      <!-- settings: debug section -->
+      <t id="90000">Depuração</t>
+      <t id="90010">Nível de depuração</t>
+      <t id="90012">Depuração</t>
+      <t id="90013">Rastreamento</t>
+    </page>
+  </add>
+</diff>
